@@ -49,13 +49,6 @@ def desencriptar_mensaje(encriptado, inversa):
                 desencriptado[j][i] = 30
     return desencriptado
 
-def imprimir_mensaje_desencriptado(desencriptado, caracteres):
-    print("Mensaje encriptado:")
-    for i in range(len(desencriptado[0])):
-        for j in range(3):
-            print(caracteres[desencriptado[j][i]], end=" ")
-    print()
-
 def imprimir_mensaje(mensaje):
     print("Mensaje:")
     for i in range(len(mensaje[0])):
@@ -66,9 +59,8 @@ def imprimir_mensaje(mensaje):
     print()
 
 def imprimir_mensaje_letras(mensaje, caracteres):
-    print("Mensaje:")
+    print("Mensaje: ")
     for i in range(len(mensaje[0])):
-        row = []
         for j in range(3):
             print(caracteres[mensaje[j][i]], end="")
     print()
@@ -101,7 +93,7 @@ elif opcion == "2":
     mensaje = input("Ingrese el mensaje a desencriptar: ").lower()
     encriptado = convertir_mensaje_a_matriz(mensaje, caracteres)
     desencriptado = desencriptar_mensaje(encriptado, inversa)
-    imprimir_mensaje_desencriptado(desencriptado, caracteres)
+    imprimir_mensaje_letras(desencriptado, caracteres)
 else:
     print("Opción no válida")
     exit(1)
