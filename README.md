@@ -16,7 +16,7 @@ El programa consta de las siguientes funciones principales:
 
 4. **`desencriptar_mensaje(encriptado, inversa)`**: Descifra un mensaje encriptado utilizando la matriz inversa de la clave. También realiza operaciones de multiplicación de matrices y módulo para obtener el mensaje original.
 
-5. **`imprimir_mensaje_desencriptado(desencriptado, caracteres)`** e **`imprimir_mensaje_letras(mensaje, caracteres)`**: Estas funciones se utilizan para imprimir el mensaje en su forma original o descifrada, respectivamente.
+5. **`imprimir_mensaje_letras(mensaje, caracteres)`**: Esta funcion se utiliza para imprimir una matriz de mensaje en caracteres.
 
 ### Uso
 
