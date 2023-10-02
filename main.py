@@ -55,7 +55,7 @@ def imprimir_mensaje_desencriptado(desencriptado, caracteres):
         for j in range(3):
             print(caracteres[desencriptado[j][i]], end=" ")
     print()
-    
+
 def imprimir_mensaje(mensaje):
     print("Mensaje:")
     for i in range(len(mensaje[0])):
