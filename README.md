@@ -28,7 +28,7 @@ El programa utiliza un conjunto de caracteres definidos en la lista `caracteres`
 
 ### Autores
 
-- Autores: Mateo Romero[https://github.com/ricrubrom], Ramiro Cabral[https://github.com/ramirocabral]
+- Autores: [Mateo Romero](https://github.com/ricrubrom), [Ramiro Cabral](https://github.com/ramirocabral)
 - Correo Electrónico: materomero04@gmail.com , ramirocabral04@gmail.com
 ---
 
