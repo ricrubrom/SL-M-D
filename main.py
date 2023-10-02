@@ -1,3 +1,5 @@
+import os
+
 def validar_matriz_modulo30(matriz):
     for i in range(len(matriz)):
         for j in range(len(matriz[0])):
@@ -82,18 +84,28 @@ inversa = [
 # Asegurarse de que los valores de la matriz inversa estén en el rango [0, 29]
 inversa = validar_matriz_modulo30(inversa)
 
-opcion=input("Desea encriptar (Seleccione 1) o desencriptar (Seleccione 2) un mensaje? \n")
 
-if opcion == "1":
-    mensaje = input("Ingrese el mensaje a encriptar: ").lower()
-    matriz_mensaje = convertir_mensaje_a_matriz(mensaje, caracteres)
-    encriptado = encriptar_mensaje(matriz_mensaje, clave)
-    imprimir_mensaje_letras(encriptado, caracteres)
-elif opcion == "2":
-    mensaje = input("Ingrese el mensaje a desencriptar: ").lower()
-    encriptado = convertir_mensaje_a_matriz(mensaje, caracteres)
-    desencriptado = desencriptar_mensaje(encriptado, inversa)
-    imprimir_mensaje_letras(desencriptado, caracteres)
-else:
-    print("Opción no válida")
-    exit(1)
+os.system("cls")
+while True:
+    opcion=input("Desea encriptar (Seleccione 1) o desencriptar (Seleccione 2) un mensaje? (3 cancela la ejecucion) \n")
+
+    os.system("cls")
+    if opcion == "1":
+        mensaje = input("Ingrese el mensaje a encriptar: ").lower()
+        matriz_mensaje = convertir_mensaje_a_matriz(mensaje, caracteres)
+        encriptado = encriptar_mensaje(matriz_mensaje, clave)
+        imprimir_mensaje_letras(encriptado, caracteres)
+
+    elif opcion == "2":
+        mensaje = input("Ingrese el mensaje a desencriptar: ").lower()
+        encriptado = convertir_mensaje_a_matriz(mensaje, caracteres)
+        desencriptado = desencriptar_mensaje(encriptado, inversa)
+        imprimir_mensaje_letras(desencriptado, caracteres)
+
+    elif opcion == "3":
+        break
+
+    else:
+        print("Opción no válida")
+
+print("Gracias por usar el programa!")
